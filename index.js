@@ -15,4 +15,4 @@ if (major < 10) {
   process.exit(1);
 }
 
-require('./create');
+require('./src/create');

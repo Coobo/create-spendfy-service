@@ -2,7 +2,7 @@ const path = require('path');
 const semver = require('semver');
 
 function getInstallPackage(version, originalDirectory) {
-  let packageToInstall = 'spendfy-scripts';
+  let packageToInstall = '@coobo/scripts';
   const validSemver = semver.valid(version);
   if (validSemver) {
     packageToInstall += `@${validSemver}`;

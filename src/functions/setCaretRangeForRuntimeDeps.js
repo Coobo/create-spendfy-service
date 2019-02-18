@@ -18,8 +18,11 @@ function setCaretRangeForRuntimeDeps(packageName) {
     process.exit(1);
   }
 
-  makeCaretRange(packageJson.dependencies, 'react');
-  makeCaretRange(packageJson.dependencies, 'react-dom');
+  const deps = require('./../dependencies.json');
+
+  for (let dep of deps) {
+    makeCaretRange(packageJson.dependencies, dep);
+  }
 
   fs.writeFileSync(packagePath, JSON.stringify(packageJson, null, 2) + os.EOL);
 }

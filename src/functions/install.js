@@ -15,11 +15,6 @@ function install(root, useYarn, usePnp, dependencies, verbose, isOnline) {
       }
       [].push.apply(args, dependencies);
 
-      // Explicitly set cwd() to work around issues like
-      // https://github.com/facebook/create-react-app/issues/3326.
-      // Unfortunately we can only do this for Yarn because npm support for
-      // equivalent --prefix flag doesn't help with this issue.
-      // This is why for npm, we run checkThatNpmCanReadCwd() early instead.
       args.push('--cwd');
       args.push(root);
 
