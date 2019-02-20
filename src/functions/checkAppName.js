@@ -1,6 +1,7 @@
 const deps = require('./../dependencies.json');
 const validateProjectName = require('validate-npm-package-name');
 const printValidationResults = require('./printValidationResults');
+var chalk = require('chalk');
 
 function checkAppName(appName) {
   const validationResult = validateProjectName(appName);
@@ -23,7 +24,7 @@ function checkAppName(appName) {
         `We cannot create a project called ${chalk.green(
           appName
         )} because a dependency with the same name exists.\n` +
-          `Due to the way npm works, the following names are not allowed:\n\n`
+          'Due to the way npm works, the following names are not allowed:\n\n'
       ) +
         chalk.cyan(dependencies.map((depName) => `  ${depName}`).join('\n')) +
         chalk.red('\n\nPlease choose a different project name.')

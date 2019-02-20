@@ -39,7 +39,11 @@ function run(
     .then((info) => {
       const isOnline = info.isOnline;
       const packageName = info.packageName;
-      console.log(`Installig ${allDependencies.map(dep => chalk.cyan(dep)).join(', ')}...`);
+      console.log(
+        `Installig ${allDependencies
+          .map((dep) => chalk.cyan(dep))
+          .join(', ')}...`
+      );
       console.log();
 
       return install(

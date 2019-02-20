@@ -1,6 +1,6 @@
 {
   "name": "@coobo/create-spendfy-service",
-  "version": "0.0.1-alpha",
+  "version": "0.0.3-alpha",
   "description": "Create a spendfy microservice with ease",
   "engines": {
     "node": ">=10"
@@ -10,7 +10,7 @@
   "license": "MIT",
   "private": false,
   "bin": {
-    "create-spendfy-service": "./index.js"
+    "create-spendfy-service": "./bin/create-spendfy-service.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",
