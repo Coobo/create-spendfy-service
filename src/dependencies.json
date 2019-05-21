@@ -1,9 +1,1 @@
-[
-  "@coobo/spendfy-logger",
-  "@coobo/skeleton",
-  "mysql2",
-  "sequelize",
-  "sequelize-cli",
-  "mongodb",
-  "mongoose"
-]
+["@coobo/spendfy-logger", "@coobo/skeleton", "mongodb", "mongoose"]
