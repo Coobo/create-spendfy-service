@@ -1,6 +1,6 @@
 {
   "name": "@coobo/create-spendfy-service",
-  "version": "0.0.3-alpha",
+  "version": "1.0.0-a",
   "description": "Create a spendfy microservice with ease",
   "engines": {
     "node": ">=10"
